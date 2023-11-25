@@ -21,10 +21,9 @@ function App() {
 
   return (
     <div className="App">
+      <title>affirmation station</title>
       <header className="App-header">
-        <title>
-          affirmation station
-          </title>
+       
         <p>
           {positiveAffirmations[affirmationIndex]}
         </p>
