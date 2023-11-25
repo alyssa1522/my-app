@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Positive Affirmation: {positiveAffirmations[affirmationIndex]}
+          {positiveAffirmations[affirmationIndex]}
         </p>
         <p>
           Button Click Count: {count}
