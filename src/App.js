@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
+import KuromiImage from './Kuromi.jpeg';
+//import bgImage from './bgtest.png';
+
+
+
+
+
+
 
 const positiveAffirmations = [
   "I am confident and capable.",
@@ -11,31 +19,63 @@ const positiveAffirmations = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0);
+  //const [count, setCount] = useState(0);
   const [affirmationIndex, setAffirmationIndex] = useState(0);
+  //const [buttonClicked, setButtonClicked] = useState(false);
+  const [affirmation, setAffirmation] = useState('');
 
   const handleButtonClick = () => {
     setAffirmationIndex((prevIndex) => (prevIndex + 1) % positiveAffirmations.length);
-    setCount(count + 1);
+    //setCount(count + 1);
+    //setButtonClicked(true);
+    const randomAffirmation = positiveAffirmations[affirmationIndex];
+    setAffirmation(randomAffirmation);
+    
   };
 
+  
+
   return (
+    
     <div className="App">
-      <title>affirmation station</title>
+      
       <header className="App-header">
        
-        <p>
-          {positiveAffirmations[affirmationIndex]}
-        </p>
-        <p>
-          Button Click Count: {count}
-        </p>
-        <button className="redButton " onClick={handleButtonClick}>
+       <h1 id="moodQuestion"> How are you feeling today? </h1>
+
+          <div class = "moodButtons">
+          <button id="happyButton">happy</button>
+          <button id="sadButton">sad</button>
+          <button id="overwhelmedButton">overwhelmed</button>
+          </div>
+        
+        {/* Display affirmation when available */}
+        {affirmation && <p>{affirmation}</p>}
+
+        {/*<p>Button Click Count: {count}</p>*/}
+        {/* Display the button only if it hasn't been clicked*/}
+        <button className="generateButton" onClick={handleButtonClick}>
           Click for an affirmation!
         </button>
+        {/*
+        {!buttonClicked && ( 
+        <button className="generateButton" onClick={handleButtonClick}>
+          Click for an affirmation!
+        </button>
+        )}
+        */}
+
+        
+
+        <img className="image123" src={KuromiImage} alt="Kuromi character"/>
+
+
       </header>
     </div>
+    
   );
+
+ 
 }
 
 export default App;

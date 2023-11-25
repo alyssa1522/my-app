@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +21,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url('./bgtest1.png');
+  background-size: cover;
 }
 
 .App-link {
@@ -37,8 +38,37 @@
   }
 }
 
-.redButton {
-  background-color: red;
-  color: white;
-  /* Add any other styles you want for the red button */
+.generateButton {
+  width: 282px;
+  height: 96px;
+  flex-shrink: 0;
+
+  border-radius: 30px;
+  background: linear-gradient(103deg, #FFF -32.88%, #ADE0CB 56.42%);
+
 }
+
+.moodButtons{
+  display: inline-block;
+  text-align: center;
+}
+
+
+/* .imageTest {
+  width: 242px;
+height: 271px;
+background: url(<./Kuromi.png>), lightgray 50% / cover no-repeat;
+} */
+
+.image123 {
+  background-image: url('./Kuromi.png');
+  width: 20%;
+  height: 20%;
+}
+
+.backgroundImage {
+  background-image: url('./bgtest1.png');
+  width: 20%;
+  height: 20%;
+}
+
