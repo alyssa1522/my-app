@@ -32,7 +32,7 @@ function App() {
           Button Click Count: {count}
         </p>
         <button className="redButton " onClick={handleButtonClick}>
-          Click for an affirmation
+          Click for an affirmation!
         </button>
       </header>
     </div>
