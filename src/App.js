@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <title>affirmation station</title>
         <p>
           {positiveAffirmations[affirmationIndex]}
         </p>
@@ -29,7 +30,7 @@ function App() {
           Button Click Count: {count}
         </p>
         <button className="redButton " onClick={handleButtonClick}>
-          Click Me!!!!
+          Click for an affirmation
         </button>
       </header>
     </div>
