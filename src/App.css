@@ -40,11 +40,12 @@
 
 .generateButton {
   width: 282px;
-  height: 96px;
-  flex-shrink: 0;
+height: 96px;
+flex-shrink: 0;
 
-  border-radius: 30px;
-  background: linear-gradient(103deg, #FFF -32.88%, #ADE0CB 56.42%);
+border-radius: 30px;
+background: linear-gradient(101deg, #FFF -30.82%, #A783B5 40.42%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
 
