@@ -225,7 +225,7 @@ function App() {
         
     
         <div className="App">
-          {state & element}
+          {state && element}
           <header className="App-header">
           <h1 id="moodQuestion"> How are you feeling today? </h1>
           <div class="printStatement">
