@@ -14,9 +14,9 @@ import crystalicon from './crystalicon.png';
 const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
-       <Switch>
+       <Routes>
         <Route exact path="/" component={Resources} />
-      </Switch>
+      </Routes>
       </BrowserRouter>,
       rootElement
     );
