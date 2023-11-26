@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDom from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-  import Button from "./button";
+//  import Button from "./button";
 //import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
 //import { Link } from 'react-router-dom';
 
@@ -15,11 +15,12 @@ const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
        <Switch>
-        <Route exact path="/" component={button} />
+        <Route exact path="/" component={Resources} />
       </Switch>
       </BrowserRouter>,
       rootElement
     );
+
 
 const posAffirmHappy = [
   "I am confident and capable.",
@@ -229,9 +230,9 @@ function App() {
         </div>
 
         <div class = "webpageButton">
-            {/*<Link to = "/resources">*/}
+            <Link to = "/resources">
             <button class="resourcesButton">mental health resources</button>
-            {/*</Link>*/}
+            </Link>
         </div>
         
        
@@ -254,6 +255,8 @@ function App() {
       
 
         <img className="crystal" src={crystalicon} alt="crystal"/>
+
+
     
       </header>
     </div>
