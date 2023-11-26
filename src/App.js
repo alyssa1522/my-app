@@ -177,6 +177,7 @@ function App() {
   
     return randomAffirmation;
   };
+  // return 
   return (
     <div className="App">
       <header className="App-header">
