@@ -1,28 +1,6 @@
 import React, { useState } from 'react';
-//import ReactDom from "react-dom";
-//import { BrowserRouter, Routes, Route, Link, useNavigate} from "react-router-dom";
-
-//  import Button from "./button";
-//import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
-//import { Link } from 'react-router-dom';
-
 import './App.css';
-//import Resources from './resources';
-//import KuromiImage from './Kuromi.jpeg';
 import crystalicon from './crystalicon.png';
-//import bgImage from './bgtest.png';
-
-// const rootElement = document.getElementById("root");
-//     ReactDOM.render(
-//       <BrowserRouter>
-//        <Routes>
-//         <Route exact path="/" component={Resources} />
-//       </Routes>
-//       </BrowserRouter>,
-//       rootElement
-//     );
-
-
 
 const posAffirmHappy = [
   "I am confident and capable.",
@@ -139,17 +117,8 @@ const posAffirmMotivation = [
 
 
 function App() {
-  // const [state,setState]=useState(true);
-  // let url="";
-  // let element=<p>No handle exists for this user!</p>;
-  // if(state) element=<a href={url}>LinkedIn handle</a>;
-  //const navigate = useNavigate();
   const [affirmationIndex, setAffirmationIndex] = useState(0);
-  //const [buttonClicked, setButtonClicked] = useState(false);
   const [affirmation, setAffirmation] = useState('');
- 
-  //const [buttonOpen, setButtonOpen] = useState(false); 
-
   
   // This handles when the user clicks one of the mood's button and it generates an affirmation
   const handleButtonClick = (buttonName) => {
@@ -157,15 +126,12 @@ function App() {
     switch (buttonName){
       case 'happy':
         anAffirmation = printAffirmation(posAffirmHappy)
-       //setButtonClicked(true)
         break;
       case 'sad':
         anAffirmation = printAffirmation(posAffirmSad)
-        //setButtonClicked(true)
         break;
       case 'overwhelmed':
         anAffirmation = printAffirmation(posAffirmOverwhelmed)
-       //setButtonClicked(true)
         break;
       case 'angry':
         anAffirmation = printAffirmation(posAffirmAngry)
@@ -217,10 +183,7 @@ function App() {
 
 
   return (
-    // <BrowserRouter>
-    //   <main>
-    //     <Routes>
-    //       <Route path="/resources" element={<resources />}/>
+
 
         
     
