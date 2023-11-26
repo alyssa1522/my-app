@@ -177,70 +177,26 @@ function App() {
   
     return randomAffirmation;
   };
-
-  
-
-
-
   return (
-
-
-        
-    
-        <div className="App">
-          {/* {state && element} */}
-          <header className="App-header">
-          <h1 id="moodQuestion"> How are you feeling today?</h1>
-          <div class="printStatement">
-            <p id="generateText">Press the buttons below to generate positive affirmations:</p>
-          </div>
-            <div class = "moodButton-container">
-              <button class="happyButton" onClick = {() => handleButtonClick('happy')}>happy</button>
-              <button class="sadButton" onClick = {() => handleButtonClick('sad')}>sad</button>
-              <button class="overwhelmedButton"  onClick = {() => handleButtonClick('overwhelmed')}>overwhelmed</button>
-              <button class="angryButton" onClick = {() => handleButtonClick('angry')}>angry</button>
-              <button class="motivationButton" onClick={() => handleButtonClick('motivation')}>motivated</button>
-            </div>
-
-            {/* <div class = "webpageButton">
-                <Link to = "/resources">
-                <button class="resourcesButton" onClick={() => navigate("/resources")}>mental health resources</button>
-                </Link>
-            </div> */}
-            
-            
-          
-
-
-            {/* Display affirmation when available */}
-            {affirmation && <p>{affirmation}</p>}
-
-            {/*<p>Button Click Count: {count}</p>*/}
-            {/* Display the button only if it hasn't been clicked*/}
-            {/* make new const*/}
-        
-            
-            
-            {/* {buttonClicked && ( 
-            <button className="generateButton" onClick={printAffirmation}>
-              Click for an affirmation!
-            </button>
-            )} */}
-          
-
-            <img className="crystal" src={crystalicon} alt="crystal"/>
-
-
-        
-          </header>
+    <div className="App">
+      <header className="App-header">
+      <h1 id="moodQuestion"> How are you feeling today?</h1>
+      <div class="printStatement">
+        <p id="generateText">Press the buttons below to generate positive affirmations:</p>
+      </div>
+        <div class = "moodButton-container">
+          <button class="happyButton" onClick = {() => handleButtonClick('happy')}>happy</button>
+          <button class="sadButton" onClick = {() => handleButtonClick('sad')}>sad</button>
+          <button class="overwhelmedButton"  onClick = {() => handleButtonClick('overwhelmed')}>overwhelmed</button>
+          <button class="angryButton" onClick = {() => handleButtonClick('angry')}>angry</button>
+          <button class="motivationButton" onClick={() => handleButtonClick('motivation')}>motivated</button>
         </div>
-    //     </Routes>
-    //   </main>
-    // </BrowserRouter>
-    
+        {/* Display affirmation when available */}
+        {affirmation && <p>{affirmation}</p>}
+
+        <img className="crystal" src={crystalicon} alt="crystal"/>
+      </header>
+    </div>
   );
 }
-
-
-
 export default App;
