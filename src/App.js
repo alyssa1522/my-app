@@ -227,7 +227,7 @@ function App() {
         <div className="App">
           {state && element}
           <header className="App-header">
-          <h1 id="moodQuestion"> How are you feeling today </h1>
+          <h1 id="moodQuestion"> How are you feeling today?</h1>
           <div class="printStatement">
             <p id="generateText">Press the buttons below to generate positive affirmations:</p>
           </div>
