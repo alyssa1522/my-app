@@ -22,6 +22,7 @@ import crystalicon from './crystalicon.png';
 //       rootElement
 //     );
 
+const navigate = useNavigate();
 
 const posAffirmHappy = [
   "I am confident and capable.",
