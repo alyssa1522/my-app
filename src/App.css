@@ -23,6 +23,12 @@
   color: white;
   background-image: url('./bgtest1.png');
   background-size: cover;
+  font-family: 'Optima', sans-serif;
+}
+
+.printStatement{
+  font-family: 'Optima', sans-serif;
+  font-size: 19px;
 }
 
 .App-link {
@@ -40,36 +46,67 @@
 
 .generateButton {
   width: 282px;
-height: 96px;
-flex-shrink: 0;
-
-border-radius: 30px;
-background: linear-gradient(101deg, #FFF -30.82%, #A783B5 40.42%);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 96px;
+  flex-shrink: 0;
+  font-family: 'Optima', sans-serif;
+  border-radius: 30px;
+  background: linear-gradient(101deg, #FFF -30.82%, #A783B5 40.42%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
 
 }
 
-.moodButtons{
+
+
+.happyButton, .sadButton, .overwhelmedButton, .angryButton, .motivationButton{
   display: inline-block;
   text-align: center;
+  width: 183px;
+  height: 63px;
+  border-radius: 30px;
+  background: linear-gradient(99deg, #BE96E7 -29.45%, #FFE6FC -29.44%, #E6D0FC -15.79%, #A295D3 71.86%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  font-family: 'Optima', sans-serif;
+  font-size: 20px;
+}
+
+.resourcesButton{
+  position: fixed;
+  bottom: 7%;
+  right: 7%;
+  text-align: center;
+  width: 199px;
+height: 70px;
+border-radius: 15px;
+border: 2px solid #E2CCE1;
+background: rgba(218, 200, 219, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  margin: 10px;
+  font-family: 'Optima', sans-serif;
+  font-size: 20px;
+  color: white;
 }
 
 
-/* .imageTest {
-  width: 242px;
-height: 271px;
-background: url(<./Kuromi.png>), lightgray 50% / cover no-repeat;
-} */
-
 .image123 {
-  background-image: url('./Kuromi.png');
+  background-image: url('./Kuromi.jpeg');
   width: 20%;
   height: 20%;
+  font-family: 'Optima', sans-serif;
+}
+
+.crystal {
+  background-image: url('./crystalicon.png');
+  font-family: 'Optima', sans-serif;
+
 }
 
 .backgroundImage {
   background-image: url('./bgtest1.png');
   width: 20%;
   height: 20%;
+  font-family: 'Optima', sans-serif;
 }
 
