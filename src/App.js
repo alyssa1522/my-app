@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import ReactDom from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+  import Resources from "./resources";
 //import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
 //import { Link } from 'react-router-dom';
 
@@ -6,6 +10,16 @@ import './App.css';
 //import KuromiImage from './Kuromi.jpeg';
 import crystalicon from './crystalicon.png';
 //import bgImage from './bgtest.png';
+
+const rootElement = document.getElementById("root");
+    ReactDOM.render(
+      <BrowserRouter>
+       <Switch>
+        <Route exact path="/" component={Page1} />
+      </Switch>
+      </BrowserRouter>,
+      rootElement
+    );
 
 const posAffirmHappy = [
   "I am confident and capable.",
