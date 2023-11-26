@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b6be4847.css",
+    "main.js": "/static/js/main.798fc810.js",
+    "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
+    "static/media/bgtest1.png": "/static/media/bgtest1.f73d658efeae4014193e.png",
+    "static/media/crystalicon.png": "/static/media/crystalicon.cc3a9accd114104495d3.png",
+    "static/media/Kuromi.jpeg": "/static/media/Kuromi.ef9bd22d499eadf41490.jpeg",
+    "index.html": "/index.html",
+    "main.b6be4847.css.map": "/static/css/main.b6be4847.css.map",
+    "main.798fc810.js.map": "/static/js/main.798fc810.js.map",
+    "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6be4847.css",
+    "static/js/main.798fc810.js"
+  ]
+}
