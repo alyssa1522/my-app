@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDom from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-  import Resources from "./resources";
+  import Button from "./button";
 //import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
 //import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
        <Switch>
-        <Route exact path="/" component={Resources} />
+        <Route exact path="/" component={button} />
       </Switch>
       </BrowserRouter>,
       rootElement
