@@ -141,6 +141,8 @@ const posAffirmMotivation = [
 function App() {
   const [state,setState]=useState(false);
   let url="";
+  let element=<p>No handle exists for this user!</p>;
+  if(state) element=<a href={url}>LinkedIn handle</a>;
   //const navigate = useNavigate();
   const [affirmationIndex, setAffirmationIndex] = useState(0);
   //const [buttonClicked, setButtonClicked] = useState(false);
@@ -223,7 +225,7 @@ function App() {
         
     
         <div className="App">
-          <a href={url}>mental health resources</a>
+          {element}
           <header className="App-header">
           <h1 id="moodQuestion"> How are you feeling today? </h1>
           <div class="printStatement">
