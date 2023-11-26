@@ -125,15 +125,6 @@ const posAffirmMotivation = [
 
 function App() {
 
-  const router = createBrowserRouter()
-    createRoutesFromElements(
-      <Route path = "/" element = {<Root />}>
-
-      </Route>
-    )
-  )
-
-  
   const [affirmationIndex, setAffirmationIndex] = useState(0);
   //const [buttonClicked, setButtonClicked] = useState(false);
   const [affirmation, setAffirmation] = useState('');
@@ -256,11 +247,6 @@ function App() {
   );
 }
 
-const Root = () => {
-  return 
-    <> 
-      <div> 
-          <Link to "/resources">  Resources </Link>
-}
+
 
 export default App;
