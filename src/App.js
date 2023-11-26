@@ -139,10 +139,10 @@ const posAffirmMotivation = [
 
 
 function App() {
-  const [state,setState]=useState(true);
-  let url="";
-  let element=<p>No handle exists for this user!</p>;
-  if(state) element=<a href={url}>LinkedIn handle</a>;
+  // const [state,setState]=useState(true);
+  // let url="";
+  // let element=<p>No handle exists for this user!</p>;
+  // if(state) element=<a href={url}>LinkedIn handle</a>;
   //const navigate = useNavigate();
   const [affirmationIndex, setAffirmationIndex] = useState(0);
   //const [buttonClicked, setButtonClicked] = useState(false);
@@ -225,9 +225,9 @@ function App() {
         
     
         <div className="App">
-          {state && element}
+          {/* {state && element} */}
           <header className="App-header">
-          <h1 id="moodQuestion"> How are you feeling today </h1>
+          <h1 id="moodQuestion"> How are you feeling today?</h1>
           <div class="printStatement">
             <p id="generateText">Press the buttons below to generate positive affirmations:</p>
           </div>
