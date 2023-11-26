@@ -216,7 +216,7 @@ function App() {
     <BrowserRouter>
       <main>
         <Routes>
-          <Route path="/resources" element={<Resource />}/>
+          <Route path="/resources" element={<resources />}/>
 
         
     
