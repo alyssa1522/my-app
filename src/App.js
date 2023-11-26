@@ -260,7 +260,7 @@ const Root = () => {
   return 
     <> 
       <div> 
-          <Link to >  Resources
+          <Link to "/resources">  Resources </Link>
 }
 
 export default App;
