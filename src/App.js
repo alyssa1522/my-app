@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import ReactDom from "react-dom";
-import { BrowserRouter, Routes, Route, Link, useNavigate} from "react-router-dom";
+//import ReactDom from "react-dom";
+//import { BrowserRouter, Routes, Route, Link, useNavigate} from "react-router-dom";
 
 //  import Button from "./button";
 //import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
 //import { Link } from 'react-router-dom';
 
 import './App.css';
-import Resources from './resources';
+//import Resources from './resources';
 //import KuromiImage from './Kuromi.jpeg';
 import crystalicon from './crystalicon.png';
 //import bgImage from './bgtest.png';
