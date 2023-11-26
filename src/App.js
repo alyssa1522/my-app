@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDom from "react-dom";
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useNavigate} from "react-router-dom";
 
 //  import Button from "./button";
 //import {createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
@@ -237,7 +237,7 @@ function App() {
 
             <div class = "webpageButton">
                 <Link to = "/resources">
-                <button class="resourcesButton">mental health resources</button>
+                <button class="resourcesButton" onClick={() => navigate("/resources")}>mental health resources</button>
                 </Link>
             </div>
             
