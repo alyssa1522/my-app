@@ -22,7 +22,7 @@ import crystalicon from './crystalicon.png';
 //       rootElement
 //     );
 
-const navigate = useNavigate();
+
 
 const posAffirmHappy = [
   "I am confident and capable.",
@@ -141,6 +141,7 @@ const posAffirmMotivation = [
 
 
 function App() {
+  const navigate = useNavigate();
   const [affirmationIndex, setAffirmationIndex] = useState(0);
   //const [buttonClicked, setButtonClicked] = useState(false);
   const [affirmation, setAffirmation] = useState('');
