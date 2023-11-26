@@ -86,8 +86,6 @@ const posAffirmOverwhelmed = [
   "What I do is enough.",
   "I’m releasing all the tension from my body and mind.",
   "I will be okay."
-
-
 ]
 
 const posAffirmAngry = [
@@ -141,7 +139,9 @@ const posAffirmMotivation = [
 
 
 function App() {
-  const navigate = useNavigate();
+  const [state,setState]=useState(false);
+  let url="";
+  //const navigate = useNavigate();
   const [affirmationIndex, setAffirmationIndex] = useState(0);
   //const [buttonClicked, setButtonClicked] = useState(false);
   const [affirmation, setAffirmation] = useState('');
@@ -215,15 +215,15 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-      <main>
-        <Routes>
-          <Route path="/resources" element={<resources />}/>
+    // <BrowserRouter>
+    //   <main>
+    //     <Routes>
+    //       <Route path="/resources" element={<resources />}/>
 
         
     
         <div className="App">
-          
+          <a href={url}>mental health resources</a>
           <header className="App-header">
           <h1 id="moodQuestion"> How are you feeling today? </h1>
           <div class="printStatement">
@@ -237,11 +237,12 @@ function App() {
               <button class="motivationButton" onClick={() => handleButtonClick('motivation')}>motivated</button>
             </div>
 
-            <div class = "webpageButton">
+            {/* <div class = "webpageButton">
                 <Link to = "/resources">
                 <button class="resourcesButton" onClick={() => navigate("/resources")}>mental health resources</button>
                 </Link>
-            </div>
+            </div> */}
+            
             
           
 
@@ -268,9 +269,9 @@ function App() {
         
           </header>
         </div>
-        </Routes>
-      </main>
-    </BrowserRouter>
+    //     </Routes>
+    //   </main>
+    // </BrowserRouter>
     
   );
 }
