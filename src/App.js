@@ -15,7 +15,7 @@ const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
        <Switch>
-        <Route exact path="/" component={Page1} />
+        <Route exact path="/" component={Resources} />
       </Switch>
       </BrowserRouter>,
       rootElement
